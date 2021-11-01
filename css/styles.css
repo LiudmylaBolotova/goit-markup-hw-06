@@ -515,6 +515,7 @@ img {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--color-hero);
 }
 
 .container.footer {
@@ -523,8 +524,9 @@ img {
   align-items: baseline;
 }
 
-.footer {
-  background-color: var(--color-hero);
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .contact {
@@ -595,6 +597,7 @@ img {
 
 /* invitation */
 .footer-title {
+  display: block;
   font-weight: var(--font-bold);
   font-size: 14px;
   line-height: 1.14;
@@ -655,7 +658,6 @@ img {
   display: flex;
   width: 358px;
   height: 50px;
-  margin-top: 20px;
   margin-right: 12px;
   padding-left: 16px;
 
@@ -917,6 +919,7 @@ img {
 .modal {
   display: flex;
   position: absolute;
+  padding: 40px;
   z-index: 2;
   top: 50%;
   left: 50%;
@@ -961,14 +964,11 @@ img {
 /* form */
 .form-our {
   display: block;
-  padding-left: 41px;
-  padding-right: 39px;
   margin-bottom: 20px;
 }
 
 .form-title {
-  padding: 40px 39px 12px 41px;
-  margin: 0;
+  margin-bottom: 12px;
 
   font-weight: var(--font-bold);
   font-size: 20px;
@@ -1064,6 +1064,7 @@ textarea {
 
 .form-btn {
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   min-width: 200px;
@@ -1140,14 +1141,9 @@ textarea {
   display: inline-block;
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 30px;
 
   color: var(--color-text);
-}
-
-.checkbox-btn {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
 }
 
 textarea::placeholder {
